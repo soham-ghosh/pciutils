@@ -264,6 +264,7 @@ int pci_load_name_list(struct pci_access *a) PCI_ABI;	/* Called automatically by
 void pci_free_name_list(struct pci_access *a) PCI_ABI;	/* Called automatically by pci_cleanup() */
 void pci_set_name_list_path(struct pci_access *a, char *name, int to_be_freed) PCI_ABI;
 void pci_id_cache_flush(struct pci_access *a) PCI_ABI;
+int pci_new_load_name_list(struct pci_access *a);
 
 enum pci_lookup_mode {
   PCI_LOOKUP_VENDOR = 1,		/* Vendor name (args: vendorID) */
